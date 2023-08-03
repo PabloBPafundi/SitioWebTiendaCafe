@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio Web</title>
+  
+    <!-- Style  -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Quicksand&display=swap" rel="stylesheet"> 
+
+    <!-- BOOTSTRAP  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+</head>
+<body>
+
+<header class="mb-5 fixed-top">
+
+<div class="border-bottom bg-light d-none d-lg-block">
+  <div class="container d-flex justify-content-between align-items-center py-1">
+    
+      <h1 class="fs-6 align-self-center my-0">Buenos Aires | WhatsApp 011-15-11111111 | Mail infoTiendaCafe@tiendacafe.com</h1>
+      
+    <div> 
+      <select class="form-select" aria-label="Default select example">
+        <option selected value="1">Español</option>
+        <option value="2">English</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary ">
+  <div class="container">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <a class="navbar-brand fs-3 text-center  m-0" href="../index.html">Tienda de Café</a>
+
+   
+   
+
+
+    <div class="">
+<div class="d-none d-lg-block">
+    <form class="d-flex " role="search">
+        <input class="form-control me-2" type="search" placeholder="Buscar producto..." aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="./productos.html">Productos</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="./contacto.html">Contacto</a>
+        </li>
+
+        <li class="nav-item dropdown d-none d-lg-block">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Locales
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../index.html#lm">Local Mercedes</a></li>
+            <li><a class="dropdown-item" href="../index.html#lst">Local San Telmo</a></li>
+            <li><a class="dropdown-item" href="../index.html#lp">Local Palermo</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="../index.html#Sub">Subcripciones</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="./blog.html">Blog</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="./quienes_somos.html">Quienes somos</a>
+        </li>
+
+      </ul>
+
+      
+     
+    </div>
+
+
+    </div>
+
+
+<div class="d-none d-lg-block">
+  <p >
+    <a class="nav-link d-inline" href="/pages/registrarse.html">Crear cuenta</a>
+    <span>|</span>
+    <a class="nav-link d-inline" href="../auth/login.html">Iniciar sesión</a>
+  </p>
+
+
+  <div class="d-flex justify-content-center">
+
+  <a href="../pages/carrito.html" class="nav-link"><i class="fa-solid fa-cart-plus fa-2x"></i></a>
+  
+  </div>
+</div>
+
+  </div>
+</nav>
+
+</header>
+
+<main >
+
+<main class="margin__top container">
+
+
+
+    <div class="container d-flex align-items-center mb-3">
+        <hr class="flex-grow-1">
+        <h2 class="text-center mx-3">Contacto</h2>
+        <hr class="flex-grow-1">
+      </div>
+
+
+    <form class="mb-5 border p-5 rounded-3 fcafe shadow-lg ">
+        <div class="form-group">
+          <label for="nombre" class="mt-2">Nombre:</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
+        </div>
+        <div class="form-group">
+          <label for="email" class="mt-2">Correo electrónico:</label>
+          <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico">
+        </div>
+        <div class="form-group">
+          <label for="comentario" class="mt-2">Comentario:</label>
+          <textarea class="form-control" id="comentario" rows="4" placeholder="Escribe tu comentario aquí"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary mt-2">Enviar</button>
+      </form>
+
+
+</main>
+
+
+
+<button class="btn whatsapp-icon" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Contactanos por WhatsApp">
+    <a class="nav-link" target="_blank" href="https://wa.me/5491111111111"><i class="fa-brands fa-square-whatsapp fa-4x"></i></a>
+  </button>
+  
+  
+  
+  <footer class="bg-secondary py-3 mt-5 sticky-footer">
+  
+  <div class="container">
+  <div class="row d-flex justify-content-between">
+  
+  <div class="col-10 row">
+      
+  
+  
+  <div class="col-lg-5">
+  
+  
+  <h4>Contacto</h4>
+  <hr>
+  <p>
+      Whatsapp: <br>
+      011-15-11111111
+  </p>
+  
+  <p>
+      Mail: <br>
+      infoTiendaCafe@tiendacafe.com
+  </p>
+  
+  
+  
+  </div>
+  
+  
+  
+  <div class="col-lg-5">
+  
+  
+  <h4>Navegacion</h4>
+  <hr>
+  
+  <p>
+  
+    <a href="index.html" class="nav-link p-0 m-0">Inicio</a>
+    <a href="productos.html" class="nav-link p-0 m-0">Productos</a>
+    <a href="" class="nav-link p-0 m-0">Locales</a>
+    <a href="" class="nav-link p-0 m-0">Subcripciones</a>
+    <a href="contacto.html" class="nav-link p-0 m-0">Contacto</a>
+    <a href="blog.html" class="nav-link p-0 m-0">Blog</a>
+    <a href="quienes_somos.html" class="nav-link p-0 m-0">Quines Somos</a>
+  
+  
+  </p>
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  </footer>
+  
+  
+  
+  
+  
+  
+  <!-- Font Awesome  -->
+  <script src="https://kit.fontawesome.com/60be70fbe4.js" crossorigin="anonymous"></script>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+  
+  <script src="../js/main.js"></script>
+  </body>
+  </html>
+  
